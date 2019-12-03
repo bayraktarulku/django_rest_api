@@ -6,7 +6,9 @@ Installation
 ```
 $ sudo apt update
 $ sudo apt install python3-dev python3-pip python3-virtualenv sqlitebrowser
-$ sudo pip install -r requirements.txt
+$ python3 -m venv nv env
+$ source env/bin/activate
+$ pip install -r requirements.txt
 $ python3 manage.py migrate
 
 $ python3 manage.py createsuperuser --username admin --email admin@mail.com
@@ -19,9 +21,8 @@ At which point you should see:
     Password:
     Password (again):
 
-    Superuser created successfully.
 ```
-
+Superuser created successfully.
 
 Run application
 ===============
