@@ -16,7 +16,7 @@ django-admin startproject tutorial
 django-admin startapp quickstart
 pwd
 find .
-python manage.py migrate
+python manage.py runserver 8000
 ```
 
 ### Creating user on the DB Server
