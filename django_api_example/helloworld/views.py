@@ -6,5 +6,5 @@ def index(request):
 
 
 def home(request):
-    # return HttpResponse("Hello, world2!")
-    return render(request, 'home.html', {'title': 'Django Example'})
+    title = 'Django Example'
+    return render(request, 'home.html', {'title': title})
